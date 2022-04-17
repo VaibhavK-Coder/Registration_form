@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Registration Form</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1><u>Registration Form</u></h1>
+<form>
+Name <input type="text" id="name" required /><br>
+Age
+<select id="age" required>
+  <option>10-15</option>
+  <option>16-25</option>
+  <option>25+</option>
+  </select>
+  <br>
+  sex:
+  <br>
+  <input type="radio" id="male" name="gender" />Male
+  <!-- Radio button is displayed before<-->
+  <input type="radio" id="female" name="gender" />Female
+  <br />
+  Address<textarea id="add" name="address" rows="10" cols="30" required>
+  </textarea>
+  <br>
+  Enter the email id you want*:
+  <!-- * is to show that this is required and important-->
+  <input type="email" id="email" required />
+  <br>
+  Password
+  <input type="password" id="password" required />
+  (password should not exceed 6 characters)
+  <br>
+  Confirm password <input type="password" id="confirmPassword" required />
+  <br>
+  <input type="submit" onclick="func()" />
+</form>
+<script src="script.js"></script>
+</body>
+</html>
